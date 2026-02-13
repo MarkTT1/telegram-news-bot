@@ -154,7 +154,6 @@ class NewsParser:
         # Метод 6: Попытка спарсить страницу новости (агрессивный метод)
         # ВНИМАНИЕ: Может замедлить работу, включай при необходимости
          return self._fetch_image_from_article(entry.get('link'))
-        
         logger.debug(f"Изображение не найдено для: {entry.get('title', 'Без названия')}")
         return None
     
