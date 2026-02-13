@@ -153,7 +153,7 @@ class NewsParser:
         
         # Метод 6: Попытка спарсить страницу новости (агрессивный метод)
         # ВНИМАНИЕ: Может замедлить работу, включай при необходимости
-        # return self._fetch_image_from_article(entry.get('link'))
+         return self._fetch_image_from_article(entry.get('link'))
         
         logger.debug(f"Изображение не найдено для: {entry.get('title', 'Без названия')}")
         return None
@@ -209,12 +209,9 @@ class NewsFilter:
         'oferta laboral', 'se busca', 'se alquila', 'se vende'
     ]
     
-    def __init__(self, storage_file='/app/data/published_news.json'):
-        # Создаём папку data если её нет
-        import os
-        os.makedirs('/app/data', exist_ok=True)
-        
+    def __init__(self, storage_file='published_news.json'):
         self.storage_file = storage_file
+        self.published_hashes = self._load_published()
     
     def _load_published(self) -> set:
         """Загрузка уже опубликованных новостей"""
