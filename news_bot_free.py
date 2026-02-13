@@ -32,6 +32,7 @@ class NewsConfig:
             'sources': [
                 'https://www.informacion.es/rss/alicante.xml',
                 'https://alicanteplaza.es/feed',
+                'https://www.alicantehoy.es/feed',
             ],
             'keywords': ['alicante', 'alacant', 'costa blanca']
         },
