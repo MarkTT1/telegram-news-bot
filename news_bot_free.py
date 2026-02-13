@@ -210,11 +210,11 @@ class NewsFilter:
     ]
     
     def __init__(self, storage_file='/app/data/published_news.json'):
-    self.storage_file = storage_file
-    # Создаём папку data если её нет
-    import os
-    os.makedirs('/app/data', exist_ok=True)
-    self.published_hashes = self._load_published()
+        # Создаём папку data если её нет
+        import os
+        os.makedirs('/app/data', exist_ok=True)
+        
+        self.storage_file = storage_file
     
     def _load_published(self) -> set:
         """Загрузка уже опубликованных новостей"""
