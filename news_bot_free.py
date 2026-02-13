@@ -38,19 +38,22 @@ class NewsConfig:
         },
         'valencia': {
             'name': 'Валенсия',
-            'channel_id': '@your_valencia_channel',  # Замени на свой канал
+            'channel_id': '@VLCTODAY',  # Замени на свой канал
             'sources': [
                 'https://www.lasprovincias.es/rss/valencia.xml',
                 'https://valenciaplaza.com/feed',
+                'https://www.20minutos.es/rss/valencia/',
+                'https://www.europapress.es/rss/rss.aspx?ch=00124',
             ],
             'keywords': ['valencia', 'valència', 'comunitat valenciana']
         },
         'barcelona': {
             'name': 'Барселона',
-            'channel_id': '@your_barcelona_channel',  # Замени на свой канал
+            'channel_id': '@BCNTODAYS',  # Замени на свой канал
             'sources': [
                 'https://www.lavanguardia.com/rss/barcelona.xml',
                 'https://beteve.cat/feed/',
+                'https://www.timeout.com/barcelona/feed',
             ],
             'keywords': ['barcelona', 'cataluña', 'catalunya']
         }
