@@ -417,8 +417,9 @@ class NewsBot:
 
 async def main():
     """Точка входа"""
-    # ВАЖНО: Замени токен на свой!
-    TELEGRAM_BOT_TOKEN = "8413304400:AAE2ob9NPe4UJiT9j0LuHqzuUEKQebuLjDI"  # Токен от @BotFather
+    import os
+    # Читаем токен из переменной окружения Railway
+    TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN', 'YOUR_TELEGRAM_BOT_TOKEN')
     
     if TELEGRAM_BOT_TOKEN == "YOUR_TELEGRAM_BOT_TOKEN":
         print("⚠️  ВНИМАНИЕ! Не забудь заменить TELEGRAM_BOT_TOKEN!")
