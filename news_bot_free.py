@@ -28,7 +28,7 @@ class NewsConfig:
     CITIES = {
         'alicante': {
             'name': 'Аликанте',
-            'channel_id': '@your_alicante_channel',  # Замени на свой канал
+            'channel_id': '@ALCTODAY',  # Замени на свой канал
             'sources': [
                 'https://www.informacion.es/rss/alicante.xml',
                 'https://alicanteplaza.es/feed',
